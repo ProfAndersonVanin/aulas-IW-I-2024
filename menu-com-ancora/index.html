@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+ <head>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="robots" content="index, follow"/>
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->       
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts-icones.css">
+    <link rel="shortcut icon" href="https://www.loopnerd.com.br/img/favicon.png" type="image/ico" />
+
+	<title>Menu com Ancora</title>
+
+ </head>
+
+<body>
+    
+<header class="main_header container">        
+    <div class="content">
+    
+        <div class="main_header_logo">
+
+            <a href="#" title="Loop Nerd">
+                <img src="img/logo.png" alt="logo.png" title="Loop Nerd"/>
+            </a>
+
+        </div>
+        
+        <div class="main_header_menu">
+        
+            <ul>
+                
+                <li><a href="#home" class="scrollSuave">Home</a></li>
+                <li><a href="#sobre" class="scrollSuave">Sobre</a></li>
+                <li><a href="#artigos" class="scrollSuave">Artigos</a></li>
+                <li><a href="#contato" class="scrollSuave">Contato</a></li>
+                <li><a href="#download" class="scrollSuave">Download</a></li>
+            
+            </ul>
+
+        </div>
+    
+    </div>
+</header>
+
+<main class="main_content container">
+        
+    <section class="section-seu-codigo container bgpreto" id="home">
+        
+        <div class="content">
+            
+            <h1 class="section_title"><i class="icon icon-home"></i> Home</h1>
+            
+            <div class="box-artigo">
+                
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            </div><!--Box Artigo-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--Section Home-->
+
+    <section class="section-seu-codigo container bgverde" id="sobre">
+        
+        <div class="content">
+            
+            <h1 class="section_title"><i class="icon icon-code"></i> Sobre</h1>
+            
+            <div class="box-artigo">
+                
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            </div><!--Box Artigo-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--Section Sobre-->
+
+    <section class="section-seu-codigo container bgamarelo" id="artigos">
+        
+        <div class="content">
+            
+            <h1 class="section_title"><i class="icon icon-file-text-o"></i> Artigos</h1>
+            
+            <div class="box-artigo">
+                
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            </div><!--Box Artigo-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--Section artigos-->
+
+    <section class="section-seu-codigo container bgazul" id="contato">
+        
+        <div class="content">
+            
+            <h1 class="section_title"><i class="icon icon-mail"></i> Contato</h1>
+            
+            <div class="box-artigo">
+                
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            </div><!--Box Artigo-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--Section ContatO-->
+
+
+    <section class="section-seu-download container" id="download">
+        
+        <div class="content">
+            
+            <h1 class="section_title" style="color:#555">Baixe seu código pronto</h1>
+            
+            <div class="box-download">
+                
+                <a href="#" class="btn-download"><i class="icon icon-cloud-download"></i> Baixar Agora</a>
+
+            </div><!--Box Download-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--FECHA BOX SEU DOWNLOAD-->
+
+</main>
+
+<footer class="main_footer container">
+    <div class="main_footer_copy">
+
+        <p class="m-b-footer"> Etec MCM.</p> 
+        <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: Alunos Etec MCM</p>
+    
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<script>
+  var $doc = $('html, body');
+     $('.scrollSuave').click(function() {
+        $doc.animate({
+            scrollTop:$($.attr(this,'href')).offset().top
+        }, 500);        
+        return false;
+    });
+</script>
+
+</body>
+</html>
